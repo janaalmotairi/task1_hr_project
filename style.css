@@ -29,7 +29,7 @@ h1, h2, h3 {
 }
 
 
-.metric-card, .chart-card {
+.metric-card {
     background-color: #f3f0f9; 
     padding: 20px; 
     border-radius: 15px;
@@ -41,15 +41,15 @@ h1, h2, h3 {
 
 .metric-card h3 {
     color: #7e57c2;
-    font-size: 0.75rem; 
-    margin-bottom: 8px;
+    font-size: 0.8rem; 
+    margin-bottom: 5px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
 
 .metric-card h1 {
     color: #673AB7;
-    font-size: 1.2rem; 
+    font-size: 2.5rem; 
     font-weight: bold;
     margin: 0;
 }

@@ -18,7 +18,7 @@ def set_dept(dept_name):
     st.session_state.page = "Dashboard"
 
 # --- CSS Styling ---
-def load_css(path="style.css"):
+def load_css(path=r"C:\Users\user\Downloads\task1_hr_project\style.css"):
     with open(path,"r",encoding="utf-8") as f:     
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
@@ -115,7 +115,6 @@ if st.session_state.page == "Dashboard":
             # Charts Row 1
             r1_c1, r1_c2 = st.columns(2)
             with r1_c1:
-                st.markdown('<div class="chart-card">', unsafe_allow_html=True)
                 st.subheader("Income by Job Role")
                 q_income = f"SELECT JobRole, AVG(MonthlyIncome) as Income FROM employees {where} GROUP BY JobRole"
                 df_inc = pd.read_sql(q_income, con=engine)
@@ -125,15 +124,14 @@ if st.session_state.page == "Dashboard":
                 st.markdown('</div>', unsafe_allow_html=True)
 
             with r1_c2:
-                st.markdown('<div class="chart-card">', unsafe_allow_html=True)
                 st.subheader("Department Distribution")
                 if current_selection == "All Departments":
                     q_dept = "SELECT Department as Label, COUNT(*) as Count FROM employees GROUP BY Department"
                 else:
                     q_dept = f"SELECT JobRole as Label, COUNT(*) as Count FROM employees {where} GROUP BY JobRole"
                 df_pie = pd.read_sql(q_dept, con=engine)
-                fig_pie = px.pie(df_pie, values='Count', names='Label', color_discrete_sequence=purple_theme, hole=0.4)
-                fig_pie.update_layout(height=350, margin=dict(t=30,b=0,l=0,r=0), paper_bgcolor='rgba(0,0,0,0)')
+                fig_pie = px.pie(df_pie, values='Count', names='Label', color_discrete_sequence=purple_theme)
+                fig_pie.update_layout(height=330, margin=dict(t=30,b=0,l=0,r=0), paper_bgcolor='rgba(0,0,0,0)')
                 st.plotly_chart(fig_pie, use_container_width=True)
                 st.markdown('</div>', unsafe_allow_html=True)
 
@@ -142,7 +140,6 @@ if st.session_state.page == "Dashboard":
             r2_c1, r2_c2 = st.columns(2)
 
             with r2_c1:
-                st.markdown('<div class="chart-card">', unsafe_allow_html=True)
                 st.caption("Attrition by Status")
                 q_att = f"SELECT Attrition, COUNT(*) as Count FROM employees {where} GROUP BY Attrition"
                 df_att = pd.read_sql(q_att, con=engine)
@@ -152,7 +149,6 @@ if st.session_state.page == "Dashboard":
                 st.markdown('</div>', unsafe_allow_html=True)
 
             with r2_c2:
-                st.markdown('<div class="chart-card">', unsafe_allow_html=True)
                 st.caption("Avg Hourly Rate by Role")
                 q_rate = f"SELECT JobRole, AVG(HourlyRate) as Rate FROM employees {where} GROUP BY JobRole"
                 df_rate = pd.read_sql(q_rate, con=engine)
@@ -203,7 +199,6 @@ elif st.session_state.page == "Add":
     st.title("Add New Employee")
     st.markdown("Fill in the Employees details")
     
-    st.markdown('<div class="metric-card" style="text-align: left;">', unsafe_allow_html=True)
     with st.form("add_form", clear_on_submit=True):
         c1, c2 = st.columns(2)
         try:
