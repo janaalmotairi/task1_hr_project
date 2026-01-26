@@ -32,6 +32,6 @@ An interactive HR Analytics Dashboard designed to visualize and manage employee 
 
 ## 📂 Project Structure
 
-* `app.py`: The main script containing the Streamlit application logic, page navigation (Dashboard, List, Add), and database connections.
+* `app.py`: The main script containing the Streamlit application logic, page navigation (Dashboard, List, Add, Update), and database connections.
 * `style.css`: Custom CSS file used to style the dashboard cards and enhance the purple-themed UI.
 * `hr_data.db`: SQLite database file that stores all employee records and data.
