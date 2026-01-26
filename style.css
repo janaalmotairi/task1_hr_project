@@ -1,0 +1,55 @@
+
+.stApp {
+    background-color: #f8f9fa;
+}
+
+
+div.stButton > button {
+    width: 100%;
+    border-radius: 12px;
+    height: 3.5em;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    color: #4a4a4a;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-bottom: 5px;
+}
+
+div.stButton > button:hover {
+    background-color: #ede7f6;
+    color: #673AB7;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+h1, h2, h3 {
+    color: #4527a0;
+}
+
+
+.metric-card, .chart-card {
+    background-color: #f3f0f9; 
+    padding: 20px; 
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border: 1px solid #e1d9f1;
+    margin-bottom: 20px;
+}
+
+
+.metric-card h3 {
+    color: #7e57c2;
+    font-size: 0.75rem; 
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.metric-card h1 {
+    color: #673AB7;
+    font-size: 1.2rem; 
+    font-weight: bold;
+    margin: 0;
+}
