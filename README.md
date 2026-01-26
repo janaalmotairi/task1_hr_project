@@ -7,7 +7,7 @@ An interactive HR Analytics Dashboard designed to visualize and manage employee 
 * **Dynamic KPIs**: Real-time tracking of total employees, attrition percentage, and average income.
 * **Advanced Filtering**: Ability to filter all dashboard visuals and data tables by specific departments.
 * **Interactive Visualizations**: Detailed charts for Income by Job Role, Department Distribution, and Attrition Analysis using Plotly.
-* **Employee Management**: Integrated forms to add new employee records directly into the database.
+* **Employee Management**: Integrated forms to add new employee records or update an employee's income directly into the database.
 
 ## 🛠️ Tech Stack
 * **Python**: Core programming logic.
