@@ -35,7 +35,7 @@ This project is a comprehensive HR data analysis focused on understanding employ
 * `app.py`: The main script containing the Streamlit application logic, page navigation (Dashboard, List, Add, Update), and database connections.
 * `style.css`: Custom CSS file used to style the dashboard cards and enhance the purple-themed UI.
 * `hr_analysis.ipynb`:Jupyter Notebook containing Exploratory Data Analysis,Data cleaning.
-* `WA_Fn-UseC -HR-Employee-Attrition.cvc`: the dataset source used for analysis and dashboard visualizaion.
+* `WA_Fn-UseC_-HR-Employee-Attrition.cvc`: the dataset source used for analysis and dashboard visualizaion.
 * `hr_data.db`: SQLite database file that stores all employee records and data.
 
 ## 📷 Screenshots
