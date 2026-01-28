@@ -1,7 +1,7 @@
 # 📊 HR Analysis Dashboard
 
 ## 📝 Project Overview
-An interactive HR Analytics Dashboard designed to visualize and manage employee data. This application provides insights into key performance indicators (KPIs).
+This project is a comprehensive HR data analysis focused on understanding employee attrition cycles. It combines exploratory data analysis (EDA) conducted in a Jupyter Notebook with an interactive web dashboard built using Streamlit to visualize key insights and trends in employee demographics and turnover.
 
 ## ✨ Key Features
 * **Dynamic KPIs**: Real-time tracking of total employees, attrition percentage, and average income.
@@ -34,6 +34,8 @@ An interactive HR Analytics Dashboard designed to visualize and manage employee 
 
 * `app.py`: The main script containing the Streamlit application logic, page navigation (Dashboard, List, Add, Update), and database connections.
 * `style.css`: Custom CSS file used to style the dashboard cards and enhance the purple-themed UI.
+* `hr_analysis.ipynb`:Jupyter Notebook containing Exploratory Data Analysis,Data cleaning.
+* `WA_Fn-UseC -HR-Employee-Attrition.cvc`: the dataset source used for analysis and dashboard visualizaion.
 * `hr_data.db`: SQLite database file that stores all employee records and data.
 
 ## 📷 Screenshots
